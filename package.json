@@ -1,0 +1,16 @@
+{
+  "name": "express-server-task",
+  "version": "1.0.0",
+  "description": "Cricket-server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Husnain",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -18,11 +18,11 @@ app.get("/get-players", (req, res) => {
 });
 
 app.get("/get-player-by-id", (req, res) => {
-    res.send(getPlayerById());
+    res.send(getPlayerById(3));
 });
 
 app.get("/search-player", (req, res) => {
-    res.send(searchPlayer());
+    res.send(searchPlayer("Imad Wasim"));
 });
 
 app.get("/batsmen", (req, res) => {
@@ -34,7 +34,7 @@ app.get("/bowlers", (req, res) => {
 });
 
 app.get("/all-rounders", (req, res) => {
-    res.send(getAllRounders);
+    res.send(getAllRounders());
 });
 
 app.get("/wicker-keepers", (req, res) => {
@@ -93,9 +93,11 @@ app.get("/total-wickets", (req, res) => {
     res.send(getTotalWickets());
 });
 
-app.get("summary", (req, res) => {
-    res.send(getTeamSummary);
+app.get('/team-summary', (req, res) => {
+  const summary = getTeamSummary();
+  res.send(summary); 
 });
+
 
 app.listen(4000, () => {
     console.log("Server is running at 4000");

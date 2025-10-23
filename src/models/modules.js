@@ -1,13 +1,14 @@
-import { players } from "./playersInfo.js"
+import { players } from "./playersInfo.js";
 
-//  Get full list
+//  Get Player list
 export function getList() {
   return players;
 }
 
-//  Get player by ID
+//  Get Player by ID
 export function getPlayerById(id) {
-  return players.find(p => p.id === id);
+   const pid = Number(id);
+  return players.find(p => p.id === pid) || null;
 }
 
 //  Search by name
@@ -22,7 +23,7 @@ export function getBatsmen() {
 
 //  Bowlers list
 export function getBowlers() {
-  return player.filter(p => p.role.toLowerCase().includes("bowler"));
+  return players.filter(p => p.role.toLowerCase().includes("bowler"));
 }
 
 // All-rounders list

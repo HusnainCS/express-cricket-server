@@ -46,7 +46,7 @@ Express-server-task/
 
 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/Express-server-task.git
+git clone https://github.com/HusnainCS/Express-server-task.git
 cd Express-server-task
 ```
 

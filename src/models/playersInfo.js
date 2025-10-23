@@ -1,4 +1,4 @@
-export const playersInfo =[
+export const players = [
   {
     "id": 1,
     "name": "Babar Azam",
@@ -269,7 +269,7 @@ export const playersInfo =[
     "teamRole": "Player",
     "totalCatches": 44
   }
-]
+];
 
 
 
